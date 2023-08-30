@@ -9,7 +9,6 @@ public class NewBehaviourScript : MonoBehaviour
     //public GameObject shootPrefab;
 
 
-    //hola
     // Update is called once per frame
     void Update()
     {
