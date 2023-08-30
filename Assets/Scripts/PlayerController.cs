@@ -5,8 +5,8 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour
 {
     public float speed=0f;
-    //public Transform shootOrigin;
-    //public GameObject shootPrefab;
+    public Transform shootOrigin;
+    public GameObject shootPrefab;
 
 
     // Update is called once per frame
@@ -16,9 +16,10 @@ public class NewBehaviourScript : MonoBehaviour
         transform.Translate(Input.GetAxis("Horizontal")*speed * Time.deltaTime,
             transform.position.z, transform.position.z);
         //Poner un boton para shoot tanto para pc, android, etc
-    //    if (Input.GetButtonDown("shoot"))
-    //    {
-    //        Instantiate(shootPrefab, shootOrigin, false);
-    //    }
+    if (Input.GetButtonDown("Shoot"))
+    {
+            //Se crear la bala cada vez que aplasto espacio con todo y script move
+      Instantiate(shootPrefab, shootOrigin, false);
+     }
     }
 }
