@@ -19,7 +19,7 @@ public class NewBehaviourScript : MonoBehaviour
     if (Input.GetButtonDown("Shoot"))
     {
             //Se crear la bala cada vez que aplasto espacio con todo y script move
-      Instantiate(shootPrefab, shootOrigin, false);
+            Instantiate(shootPrefab, shootOrigin, false);
      }
     }
 }
